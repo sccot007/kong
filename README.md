@@ -24,5 +24,7 @@
                  |                                        |
                  v                                        v
             발급받은 access_token 적용            1. JWT 토큰 Base64 디코딩 2. 서명검증
-          __Authorization__ 헤더에 포             3. 유효기간(exp)검증 4.발급자(lss) 검증 5.Audience(aud) 검증
+          "Authorization" 헤더에 포             3. 유효기간(exp)검증 4.발급자(lss) 검증 5.Audience(aud) 검증
+
+3. Backend Service 결과값을 kong을 거처 Client로 반환
 ```
